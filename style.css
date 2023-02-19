@@ -17,11 +17,14 @@ body{
     width: 100%;
     height: auto;
     color: black;
+    ;
 }
 
 .container-fluid{
     position: relative;
     min-height: 100vh;
+   
+   
 }
 
 .bg{
@@ -43,6 +46,8 @@ body{
     background-position: center;
     filter: brightness(45%);
 }
+
+
 
 .nav{
     position: relative;
@@ -107,6 +112,14 @@ body{
     right: 0.8rem;
     font-size: 2rem;
     color: var(--text-color);
+    cursor: pointer;
+}
+
+i{
+    color: white;
+}
+
+.HomeButton,.ContactButton,.cart{
     cursor: pointer;
 }
 
@@ -285,7 +298,7 @@ body{
     overflow-x: auto;
 }
 
-.dashboard-menu > a{
+.manu-btn{
     text-decoration: none;
     text-align: center;
     border-radius: 20px;
@@ -296,30 +309,26 @@ body{
     background-color: lightgrey;
 }
 
-.dashboard-menu > a:hover{
+.manu-btn:hover{
     background-color: red;
     color: lightgrey;
 }
 
-.dashboard-content{
-    display: grid;
-    grid-template-columns: repeat(auto-fit,miniax(250px, 1fr));
-    gap: 20px;
-    padding: 0.5rem 1rem 1rem 1rem;
+.active-btn{
+    background-color: red;
+    color: white;
 }
+
 
 .dashboard-card{
     background-color: white;
-    box-shadow: rgba(0,0,0,0.16) 0px 1px 4px;
-    border-radius: 15px;
-    position: relative;
+    padding: 15px 15px 15px 15px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 8px;
     cursor: pointer;
-    width: 30%;
+    display: grid;
 }
 
-.dashboard-card :hover{
-    box-shadow: rgba(0,0,0,0.35) 0px 5px 15px;
-}
 
 .card-image{
     width: 100%;
@@ -328,5 +337,6 @@ body{
     border-radius: 15px;
 }
 
-
-
+.food-item{
+    display: block;
+}

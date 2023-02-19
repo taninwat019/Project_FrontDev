@@ -21,7 +21,7 @@
 </head>
 
 <body>
-  <div class="container-fluid bg">
+  <div class="container-fluid p-0 bg ">
 
     <!-- Navigation -->
     <div class="nav">
@@ -30,10 +30,12 @@
       </div>
       <ul>
         <div class="HomeButton">
-          <a href="./home.html"><span class="fas fa-home""></span></a>
+          <i class="fas fa-home" id="home-icon"></i>
+        
         </div>
         <div class=" ContactButton">
-              <i><a href="./contact.html"><span class="fas fa-user"></span></a></i>
+          <i class="fas fa-user" id="contact-icon"></i>
+             
         </div>
         <div class="cart">
           <i class="fas fa-shopping-cart" id="cart-icon"></i>
@@ -147,32 +149,77 @@
 
       <h3 class="dashboard-title"> Recommend Food For Your </h3>
       <div class="dashboard-menu">
-        <a href="#"> Best Seller </a>
-        <a href="#"> Main </a>
-        <a href="#"> Water </a>
-        <a href="#"> Dessert</a>
+        <button type="button" class="manu-btn active-btn" id="bestSeller">Best Seller</button>
+        <button type="button" class="manu-btn " id="main">Main</button>
+        <button type="button" class="manu-btn " id="water">Water</button>
+        <button type="button" class="manu-btn " id="dessert">Dessert</button>
+        
       </div>
 
-      <div class="dashboard-content">
 
-        <div class="dashboard-card">
-          <img class="card-image" src="./image/pizza.jpg" alt="">
-          <div class="card-detail">
-            <h4> Amazing Pizza <span> $30 </span></h4>
-            <p> Pizza </p>
-            <p class="card-time"><span class="fas fa.clock"></span> 15-30 mins </p>
-          </div>
-        </div>
-        <div class="dashboard-card">
-          <img class="card-image" src="./image/burger.jpg" alt="">
-          <div class="card-detail">
-            <h4> Amazing Burger <span> $15 </span></h4>
-            <p> Burger </p>
-            <p class="card-time"><span class="fas fa.clock"></span> 3-5 mins </p>
-          </div>
-        </div>
-      </div>
+     
+
+      
+
     </div>
+
+    <div class="container dashboard-content ">
+
+      <div class="food-item">
+
+        
+      </div>
+
+      <div class="row ">
+          
+        <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="dashboard-card main-manu">
+            <img class="card-image" src="./image/pizza.jpg" alt="">
+            <div class="card-detail">
+              <h4> Amazing Pizza <span> $30 </span></h4>
+              <p> Pizza </p>
+              <p class="card-time"><span class="fas fa.clock"></span> 15-30 mins </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="dashboard-card best-seller">
+            <img class="card-image" src="./image/burger.jpg" alt="">
+            <div class="card-detail">
+              <h4> Amazing Pizza <span> $30 </span></h4>
+              <p> Pizza </p>
+              <p class="card-time"><span class="fas fa.clock"></span> 15-30 mins </p>
+              </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-4 col-md-6 col-sm-12 ">
+          <div class="dashboard-card dessert-manu">
+            <img class="card-image" src="./image/pizza.jpg" alt="">
+            <div class="card-detail">
+              <h4> Amazing Pizza dessert<span> $30 </span></h4>
+              <p> Pizza </p>
+              <p class="card-time"><span class="fas fa.clock"></span> 15-30 mins </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col col-lg-4 col-md-6 col-sm-12">
+          <div class="dashboard-card water-manu">
+            <img class="card-image" src="./image/burger.jpg" alt="">
+            <div class="card-detail">
+              <h4> Amazing Pizza water<span> $30 </span></h4>
+              <p> Pizza </p>
+              <p class="card-time"><span class="fas fa.clock"></span> 15-30 mins </p>
+            </div>
+          </div>
+        </div>
+    
+
+    
+    </div>
+    
 
     <!-- JavaScript -->
     <script src="main.js"></script>
@@ -185,6 +232,7 @@
       integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
       crossorigin="anonymous"></script>
   </div>
+
 </body>
 
 </html>
