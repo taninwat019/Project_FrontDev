@@ -298,7 +298,7 @@ i{
     overflow-x: auto;
 }
 
-.manu-btn{
+.menu-btn{
     text-decoration: none;
     text-align: center;
     border-radius: 20px;
@@ -309,7 +309,7 @@ i{
     background-color: lightgrey;
 }
 
-.manu-btn:hover{
+.menu-btn:hover{
     background-color: red;
     color: lightgrey;
 }
@@ -327,6 +327,11 @@ i{
     border-radius: 8px;
     cursor: pointer;
     display: grid;
+}
+
+.col :hover{
+    background-color: red;
+    color: white;
 }
 
 

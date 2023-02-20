@@ -29,14 +29,14 @@ contactIcon.onclick = () =>{
 }
 
 // Category
-const manuBtns = document.querySelectorAll('.manu-btn')
+const menuBtns = document.querySelectorAll('.menu-btn')
 const foodItems = document.querySelectorAll('.food-item')
 
 let activeBtn = "bestSeller"
 
 showFoodMenu(activeBtn)
 
-manuBtns.forEach((btn) => {
+menuBtns.forEach((btn) => {
     btn.addEventListener('click', () =>{
         resetActiveBtn()
         showFoodMenu(btn.id)
@@ -46,7 +46,7 @@ manuBtns.forEach((btn) => {
 })
 
 function resetActiveBtn(){
-    manuBtns.forEach((btn) => {
+    menuBtns.forEach((btn) => {
         btn.classList.remove('active-btn')
     })
 }
